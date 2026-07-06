@@ -642,7 +642,7 @@
    ===================================================== */
 const FECHA_EVENTO = new Date("2026-12-18T18:00:00-03:00"); // hora de Chile
 const FECHA_LIMITE_RSVP = new Date("2026-11-15T23:59:59-03:00");
-const APPS_SCRIPT_URL = "PEGA_AQUI_LA_URL_DE_TU_GOOGLE_APPS_SCRIPT"; // ver README
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxFGTKKzuzslSxKdAQDzjNgFy7Kveoz7jbZop3FwWZUgRvfcJMNynveB3Igjq6ocJdl_w/exec"; // ver README
 
 /* =====================================================
    TIPO DE INVITADO SEGÚN EL LINK (?tipo=...)
@@ -760,7 +760,7 @@ document.getElementById("form-rsvp").addEventListener("submit", async (e)=>{
   btn.textContent = "Enviando...";
 
   try{
-    if(APPS_SCRIPT_URL.startsWith("https://script.google.com/macros/s/AKfycbxFGTKKzuzslSxKdAQDzjNgFy7Kveoz7jbZop3FwWZUgRvfcJMNynveB3Igjq6ocJdl_w/exec")){
+    if(APPS_SCRIPT_URL.startsWith("PEGA AQUÍ")){
       throw new Error("CONFIG");
     }
 
