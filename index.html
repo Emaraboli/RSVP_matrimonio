@@ -760,7 +760,7 @@ document.getElementById("form-rsvp").addEventListener("submit", async (e)=>{
   btn.textContent = "Enviando...";
 
   try{
-    if(APPS_SCRIPT_URL.startsWith("PEGA_AQUI")){
+    if(APPS_SCRIPT_URL.startsWith("https://script.google.com/macros/s/AKfycbxFGTKKzuzslSxKdAQDzjNgFy7Kveoz7jbZop3FwWZUgRvfcJMNynveB3Igjq6ocJdl_w/exec")){
       throw new Error("CONFIG");
     }
 
@@ -780,7 +780,7 @@ document.getElementById("form-rsvp").addEventListener("submit", async (e)=>{
     }
   } catch(err){
     if(err.message === "CONFIG"){
-      mostrarEstado("https://script.google.com/macros/s/AKfycbxFGTKKzuzslSxKdAQDzjNgFy7Kveoz7jbZop3FwWZUgRvfcJMNynveB3Igjq6ocJdl_w/exec", "err");
+      mostrarEstado("Hubo un problema al enviar tu confirmación. Intenta nuevamente.", "err");
     } else {
       mostrarEstado("Hubo un problema al enviar tu confirmación. Intenta nuevamente.", "err");
     }
